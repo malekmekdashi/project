@@ -5,7 +5,6 @@ const session = require('express-session');
 const path = require('path');
 const routes = require("./Controllers")
 const hbs = exphbs.create({});
-// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/connection');
 const { strict } = require('assert');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -28,9 +27,9 @@ const sess = {
   },
   resave: false,
   saveUninitialized: true,
-  // store: new SequelizeStore({
-  //   db: sequelize,
-  // }),
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
 };
 
 
