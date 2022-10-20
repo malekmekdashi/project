@@ -6,18 +6,11 @@
     text-align: center;
 }
 
-.siteName {
-    padding-top: 10px;
-}
-.welcome {
-    font-size: 40px;
-    padding-bottom: 15px;
-}
-
 .pressStart {
     font-size: 25px;
     padding-bottom: 45px;
     font-family: 'Press Start 2P';
+    color: rgb(90, 206, 214);
 }
 
 .start {
